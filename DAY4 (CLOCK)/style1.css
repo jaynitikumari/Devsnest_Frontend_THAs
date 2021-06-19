@@ -1,0 +1,58 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 30px solid red;
+  width: 440px;
+  height: 440px;
+  top: 100px;
+  border-radius: 50%;
+  box-shadow: 5px 10px 20px rgb(77, 77, 77);
+}
+.hand { 
+  height: 160px;
+  width: 10px;
+  border-radius: 10px;
+  transform-origin: top;
+  position: absolute;
+  top: 35%;
+}
+
+.sec { 
+  background-color: black;
+  animation: rotate 60s linear infinite normal;
+}
+
+.min {
+  background-color: black;
+  animation: rotate 3600s linear infinite normal;
+}
+.hr {
+  background-color: black;
+  animation: rotate 15000s linear infinite normal;
+}
+
+@keyframes rotate {
+  25% {
+    transform: rotate(90deg);
+  }
+  50% {
+    transform: rotate(180deg);
+  }
+  75% {
+    transform: rotate(270deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
